@@ -417,6 +417,7 @@ def draw_overlay(frame, gesture, confidence, emotion, response):
         (255, 255, 255),
         2,
     )
+    
 
 
 # ============================================================
