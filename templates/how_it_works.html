@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gesture AI | How It Works</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+<nav class="nav"><a class="brand" href="/">Gesture<span>AI</span></a><div class="navlinks"><a href="/">Home</a><a href="/live">Live Recognition</a><a href="/gestures">Gestures</a><a class="active" href="/how-it-works">How It Works</a><a href="/emotions">Emotions</a><a href="/about">About</a></div></nav>
+<main class="page">
+<div class="section-head"><span class="eyebrow">PIPELINE</span><h1>How Gesture AI Works</h1><p>The complete recognition pipeline runs frame by frame.</p></div>
+<div class="pipeline">
+<div class="step"><b>01</b><h3>Camera Input</h3><p>OpenCV captures live frames from the webcam.</p></div>
+<div class="arrow">→</div>
+<div class="step"><b>02</b><h3>MediaPipe</h3><p>Hand landmarks are detected and converted into numerical features.</p></div>
+<div class="arrow">→</div>
+<div class="step"><b>03</b><h3>ML Model</h3><p>The trained classifier predicts the most likely gesture.</p></div>
+<div class="arrow">→</div>
+<div class="step"><b>04</b><h3>Emotion</h3><p>The face is analyzed to estimate the current emotion.</p></div>
+<div class="arrow">→</div>
+<div class="step"><b>05</b><h3>Context</h3><p>Gesture, emotion and time are combined into a response.</p></div>
+<div class="arrow">→</div>
+<div class="step"><b>06</b><h3>Speech</h3><p>pyttsx3 converts the generated response into spoken audio.</p></div>
+</div>
+</main><footer>Gesture AI • Context-Aware Assistive Communication</footer>
+</body>
+</html>

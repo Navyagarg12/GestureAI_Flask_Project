@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gesture AI | Live Recognition</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+<nav class="nav">
+<a class="brand" href="/">Gesture<span>AI</span></a>
+<div class="navlinks"><a href="/">Home</a><a class="active" href="/live">Live Recognition</a><a href="/gestures">Gestures</a><a href="/how-it-works">How It Works</a><a href="/emotions">Emotions</a><a href="/about">About</a></div>
+</nav>
+<main class="page">
+<div class="section-head"><span class="eyebrow">LIVE SYSTEM</span><h1>Live Gesture Recognition</h1><p>Show one supported hand gesture in front of the camera.</p></div>
+<div class="live-grid">
+  <div class="camera-card">
+    <div class="camera-top"><span class="live-dot"></span> Camera stream</div>
+    <img id="video" class="video" src="/video_feed" alt="Live recognition stream">
+  </div>
+  <div class="status-card">
+    <div class="status-item"><span>Gesture</span><strong id="gesture">No gesture</strong></div>
+    <div class="status-item"><span>Confidence</span><strong id="confidence">0%</strong></div>
+    <div class="status-item"><span>Emotion</span><strong id="emotion">Neutral</strong></div>
+    <div class="response-box"><span>Generated speech</span><strong id="response">Waiting for gesture...</strong></div>
+    <div class="speak-status" id="speaking">● Ready</div>
+  </div>
+</div>
+</main>
+<footer>Live recognition runs locally through Flask.</footer>
+<script src="{{ url_for('static', filename='js/live.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gesture AI | Home</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+<nav class="nav">
+  <a class="brand" href="/">Gesture<span>AI</span></a>
+  <div class="navlinks">
+    <a class="active" href="/">Home</a>
+    <a href="/live">Live Recognition</a>
+    <a href="/gestures">Gestures</a>
+    <a href="/how-it-works">How It Works</a>
+    <a href="/emotions">Emotions</a>
+    <a href="/about">About</a>
+  </div>
+</nav>
+<main>
+<section class="hero">
+  <div>
+    <span class="badge">AI-powered assistive communication</span>
+    <h1>Turn hand gestures into <span>spoken communication.</span></h1>
+    <p>Gesture AI combines MediaPipe hand tracking, machine learning, facial emotion recognition and contextual logic to create natural spoken responses.</p>
+    <div class="actions">
+      <a class="btn primary" href="/live">Start Live Recognition</a>
+      <a class="btn secondary" href="/how-it-works">Explore How It Works</a>
+    </div>
+  </div>
+  <div class="hero-card">
+    <div class="pulse"></div>
+    <div class="big-icon">✋</div>
+    <h3>Real-time recognition</h3>
+    <p>Gesture → Emotion → Context → Speech</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head"><span class="eyebrow">CORE FEATURES</span><h2>One system, multiple layers of intelligence</h2></div>
+  <div class="grid three">
+    <div class="card"><div class="icon">✋</div><h3>Gesture Recognition</h3><p>Recognizes supported hand gestures using MediaPipe landmarks and a trained ML classifier.</p></div>
+    <div class="card"><div class="icon">◉</div><h3>Emotion Recognition</h3><p>Analyzes facial expressions to identify emotions such as Happy, Sad, Angry and Surprise.</p></div>
+    <div class="card"><div class="icon">🔊</div><h3>Context-Aware Speech</h3><p>Combines gesture, emotion and time context to generate a meaningful spoken response.</p></div>
+  </div>
+</section>
+</main>
+<footer>Gesture AI • KIET Group of Institutions</footer>
+</body>
+</html>
